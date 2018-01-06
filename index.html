@@ -9,8 +9,19 @@
 </div>
 </body>
 <script>
+
+// first step: set up an event listener for when a key was pressed and test it by creating an alert
+  // document.addEventListener('keypress', (e) => {
+  //   alert ('key was pressed')
+  // });
+
+// second step: change the alert functionality to a functionality that displays the alert in the div
+  // document.addEventListener('keypress', (e) => {
+  //   document.getElementById('display').innerHTML = "key was pressed"
+  // });
+
   document.addEventListener('keypress', (e) => {
-    alert ('key was pressed')
+    document.getElementById('display').innerHTML = "key was pressed"
   });
 </script>
 </html>
