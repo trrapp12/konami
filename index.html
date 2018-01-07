@@ -4,46 +4,82 @@
   <title>konami</title>
 </head>
 <style>
+
 * {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   margin: 0;
   border: 0;
 }
 body {
-  background-color: black;
+  background-color: #1e1e1e;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 }
 
-#display {
-  width: 20vw;
-  height: 20px;
+h4 {
+  font-color: white;
+  color: white;
+  z-index: 10;
+  text-align: left;
+  font-size: .85em;
+}
+
+#background > #display > #display1 {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: left;
+}
+
+#background > #display1 {
+  opacity: 1.0 !important;
+  position: absolute;
+  top: 22vh;
+  width: 80%;
+  height: 100px;
   font-family: courier;
-  color: #00FF00;
   text-align: center;
+  margin-left: calc((100% - 84%) / 2);
+  margin-right: calc((100% - 84%) / 2);
+  font-size: .85em;
+  overflow: hidden;
+  box-shadow: inset 0px 1px 26px 1px #BFBDBD,1px 9px 77px -4px #636161;
+  -webkit-box-shadow: inset 0px 1px 26px 1px #BFBDBD,1px 9px 77px -4px #636161;
+  -moz-box-shadow: inset 0px 1px 26px 1px #BFBDBD,1px 9px 77px -4px #636161;
+  -o-box-shadow: inset 0px 1px 26px 1px #BFBDBD,1px 9px 77px -4px #636161;
+  padding: 40px 40px 40px 40px;
+  z-index: 10;
+  text-shadow: none;
 }
-
 #background {
   display: inline-block;
-  background-color: #565656;
-  color: transparent;
-  text-shadow: 0px 2px 3px rgba(225,225,225,0.5);
+  position: relative;
+  text-shadow: 0px 0px 10px rgba(0,225,0,0.9);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   font-family: courier;
   text-align: center;
   font-size: 400px;
-  width: 100%;
+  width: 80%;
   height: 100%;
-  margin: auto;
+  margin-right: auto;
+  margin-left: calc((100% - 80%) / 2);
+  margin-top: 200px;
+  /*this will make it so that a continual string of characters that is seen as one word will break across the page*/
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  transition: all 1s cubic-bezier(0, 1.14, 0.82, 1.02);
+  z-index: -10;
 }
 
 </style>
 <body>
-  <divj id="background">
-    <h4 id="display"></h4>
+  <div id="background">
+    <div id="display1">
+      <h4 id="display" style="color: white"></h4>
+    </div>
   </div>
 </body>
 <script>
@@ -111,23 +147,82 @@ body {
 //
 // });
 
+// step 8) did a lot of coding, so not sure how many steps in this one, but this is what I got to to get the expression to get smaller with an exponential rate incorporated
+
+// var keytotal = 0
+// var myfontsize = 502
+// var x = 1
+
+// document.addEventListener('keypress', (e) => {
+
+//   keytotal += 1
+//   x += 1
+//   myfontsize -= (x ** 2)
+//   console.log (keytotal)
+//   console.log (myfontsize)
+//   const keypressed = event.key
+//   // document.getElementById('display').innerHTML += keypressed
+
+//   document.getElementById('background').innerHTML += keypressed
+//   document.getElementById('background').style.fontSize = myfontsize
+
+
+// });
+
+// step 9) for some reason when the font gets to 118 it is no longer getting smaller.  So I am going to try and build a break case statement that will evaluate for when it gets below 118 and start subtracting by 2 or 5 and then make it stop when it gets to a certain smallness
+
 var keytotal = 0
-var myfontsize = 502
+var myfontsize = 302
 var x = 1
 
 document.addEventListener('keypress', (e) => {
 
-  keytotal += 1
-  x += 1
-  myfontsize -= (x ** 2)
-  console.log (keytotal)
-  console.log (myfontsize)
-  const keypressed = event.key
-  // document.getElementById('display').innerHTML += keypressed
+  if (myfontsize > 120) {
+      keytotal += 1
+      x += 1
+      myfontsize -= (x ** 2)
+      console.log (keytotal)
+      console.log (myfontsize)
+      const keypressed = event.key
 
-  document.getElementById('background').innerHTML += keypressed
-  document.getElementById('background').style.fontSize = myfontsize
+      document.getElementById('background').innerHTML += keypressed
+      document.getElementById('background').style.fontSize = myfontsize
+      document.getElementById('display').innerHTML += keypressed
 
+  }
+
+  else if (myfontsize < 120 && myfontsize > 50) {
+      keytotal += 1
+      x += 1
+      myfontsize -= x
+      console.log (keytotal)
+      console.log (myfontsize)
+      const keypressed = event.key
+      // document.getElementById('display').innerHTML += keypressed
+
+      document.getElementById('background').innerHTML += keypressed
+      document.getElementById('background').style.fontSize = myfontsize
+      document.getElementById('background').style.textShadow = "0px 0px 5px rgba(0,225,0,0.9)"
+      document.getElementById('display').innerHTML += keypressed
+  }
+
+  else {
+      keytotal += 1
+      x = 0
+      myfontsize -= x
+      console.log (keytotal)
+      console.log (myfontsize)
+      const keypressed = event.key
+      // document.getElementById('display').innerHTML += keypressed
+
+      document.getElementById('background').innerHTML += keypressed
+      document.getElementById('background').style.fontSize = myfontsize
+      document.getElementById('background').style.textShadow = "0px 0px 3px rgba(0,225,0,0.9)"
+      document.getElementById('display').innerHTML += keypressed
+
+  }
+
+  console.log(myfontsize)
 
 });
 
