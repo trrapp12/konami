@@ -18,11 +18,12 @@ body {
 }
 
 h4 {
-  font-color: white;
   color: white;
   z-index: 10;
+  margin-left: 76px;
+  margin-top: 20px;
   text-align: left;
-  font-size: .85em;
+  font-size: 50px;
 }
 
 #background > #display > #display1 {
@@ -61,24 +62,72 @@ h4 {
   background-clip: text;
   font-family: courier;
   text-align: center;
-  font-size: 400px;
+  /* font-size: 400px; */
   width: 80%;
   height: 100%;
   margin-right: auto;
   margin-left: calc((100% - 80%) / 2);
-  margin-top: 200px;
+  margin-top: 20vh;
   /*this will make it so that a continual string of characters that is seen as one word will break across the page*/
   overflow-wrap: break-word;
   word-wrap: break-word;
   transition: all 1s cubic-bezier(0, 1.14, 0.82, 1.02);
   z-index: -10;
 }
+.cli {
+  position: absolute;
+  margin-left: 0%;
+  margin-right: 90%;
+  width: 14%;
+  height: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: courier;
+  font-size: 89px;
+  color: white;
+  text-shadow: 1px 1px 7px rgba(255, 255, 255, 0.72);
+}
+
+#display::after {
+  content: "|";
+  animation-name: blinker;
+  animation-duration: 1s;
+  top: -2px;
+
+  animation-name: blinker;
+animation-duration: 1s;
+animation-timing-function: ease-in-ease-out;
+animation-iteration-count: 3000;
+
+-webkit-animation-name: blinker;
+-webkit-animation-duration: 1s;
+-webkit-animation-timing-function: ease-in-ease-out;
+-webkit-animation-iteration-count: 3000;
+}
+
+@-moz-keyframes blinker {  /* Decimal not necessary, 0 and 1 is enough */
+0% { opacity: 1.0; }
+50% { opacity: 0.0; }
+100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {
+0% { opacity: 1.0; }
+50% { opacity: 0.0; }
+100% { opacity: 1.0; }
+}
+
+@keyframes blinker {
+0% { opacity: 1.0; }
+50% { opacity: 0.0; }
+100% { opacity: 1.0; }
+}
 
 </style>
 <body>
   <div id="background">
     <div id="display1">
-      <h4 id="display" style="color: white"></h4>
+      <div class="cli">></div><h4 id="display" style="color: white"></h4>
     </div>
   </div>
 </body>
@@ -171,9 +220,13 @@ h4 {
 
 // step 9) for some reason when the font gets to 118 it is no longer getting smaller.  So I am going to try and build a break case statement that will evaluate for when it gets below 118 and start subtracting by 2 or 5 and then make it stop when it gets to a certain smallness
 
+// variables for displaying text
 var keytotal = 0
-var myfontsize = 302
+var myfontsize = 100
 var x = 1
+// variables for storing text
+const secretCode ="ArrowUp ArrowUp ArrowDown ArrowDown ArrowLeft ArrowRight ArrowLeft ArrowRight b a"
+const codeChain = [];
 
 document.addEventListener('keypress', (e) => {
 
@@ -186,7 +239,7 @@ document.addEventListener('keypress', (e) => {
       const keypressed = event.key
 
       document.getElementById('background').innerHTML += keypressed
-      document.getElementById('background').style.fontSize = myfontsize
+      // document.getElementById('background').style.fontSize = myfontsize
       document.getElementById('display').innerHTML += keypressed
 
   }
@@ -201,7 +254,7 @@ document.addEventListener('keypress', (e) => {
       // document.getElementById('display').innerHTML += keypressed
 
       document.getElementById('background').innerHTML += keypressed
-      document.getElementById('background').style.fontSize = myfontsize
+      // document.getElementById('background').style.fontSize = myfontsize
       document.getElementById('background').style.textShadow = "0px 0px 5px rgba(0,225,0,0.9)"
       document.getElementById('display').innerHTML += keypressed
   }
@@ -216,7 +269,7 @@ document.addEventListener('keypress', (e) => {
       // document.getElementById('display').innerHTML += keypressed
 
       document.getElementById('background').innerHTML += keypressed
-      document.getElementById('background').style.fontSize = myfontsize
+      // document.getElementById('background').style.fontSize = myfontsize
       document.getElementById('background').style.textShadow = "0px 0px 3px rgba(0,225,0,0.9)"
       document.getElementById('display').innerHTML += keypressed
 
@@ -224,6 +277,20 @@ document.addEventListener('keypress', (e) => {
 
   console.log(myfontsize)
 
+});
+
+document.addEventListener('keyup', (e) => {
+  codeChain.push(e.key)
+  console.log(codeChain)
+
+  for (i = 0; i < codeChain.length; i++ ) {
+      if (codeChain.splice != "" && codeChain.splice === secretCode) {
+        alert("konami")
+      }
+      else {
+
+      }
+  }
 });
 
 </script>
