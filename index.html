@@ -15,6 +15,7 @@ body {
   background-color: #1e1e1e;
   height: 100vh;
   width: 100vw;
+  transition: all 5s cubic-bezier(0, 1.14, 0.82, 1.02);
 }
 
 h4 {
@@ -37,6 +38,7 @@ h4 {
   margin-right: auto;
   margin-left: auto;
   text-align: left;
+  transition: all 5s cubic-bezier(0, 1.14, 0.82, 1.02);
 }
 
 #background > #display1 {
@@ -58,6 +60,7 @@ h4 {
   padding: 40px 40px 40px 40px;
   z-index: 10;
   text-shadow: none;
+  transition: all 5s cubic-bezier(0, 1.14, 0.82, 1.02);
 }
 #background {
   display: inline-block;
@@ -231,7 +234,7 @@ var keytotal = 0
 var myfontsize = 100
 var x = 1
 // variables for storing text
-const secretCode ="ArrowUp ArrowUp ArrowDown ArrowDown ArrowLeft ArrowRight ArrowLeft ArrowRight b a"
+const secretCode ="ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba"
 const codeChain = [];
 
 document.addEventListener('keypress', (e) => {
@@ -295,18 +298,24 @@ document.addEventListener('keyup', (e) => {
 });
 
 
-document.addEventListener('keyup', (e) => {
-  codeChain.push(e.key)
-  console.log(codeChain)
+window.addEventListener('keyup', (e) => {
+  // const secretCode ="ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba"
+  // const codeChain = [];
+  codeChain.push(e.key);
+  codeChain.splice(-secretCode.length -1, codeChain.length - secretCode.length);
+  if (codeChain.join('').includes(secretCode)) {
+    document.body.style.background = "url('assets/konamibetter.jpg')"
+    document.getElementById('background').style.display = "none"
+    document.getElementById('display').style.display = "none"
+    document.getElementById('display1').style.display = "none"
+    document.body.style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
+    document.getElementById('background').style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
+    document.getElementById('display').style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
+    document.getElementById('display1').style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
 
-  for (i = 0; i < codeChain.length; i++ ) {
-      if (codeChain.splice != "" && codeChain.splice === secretCode) {
-        alert("konami")
-      }
-      else {
-
-      }
+    // transition: all 1s cubic-bezier(0, 1.14, 0.82, 1.02);
   }
+
 });
 
 </script>
