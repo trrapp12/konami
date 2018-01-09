@@ -18,6 +18,7 @@ body {
 }
 
 h4 {
+  box-shadow: border-box;
   color: white;
   z-index: 10;
   margin-left: 76px;
@@ -27,6 +28,8 @@ h4 {
   height: 50px;
   padding-left: 10px;
   width: 572px;
+  transition: all 1s cubic-bezier(0, 1.14, 0.82, 1.02);
+  text-overflow: ellipsis;
 }
 
 #background > #display > #display1 {
@@ -281,6 +284,16 @@ document.addEventListener('keypress', (e) => {
   console.log(myfontsize)
 
 });
+
+document.addEventListener('keyup', (e) => {
+
+  if (keytotal < 20) {
+    document.getElementById('display').style.fontSize = 50  }
+  else {
+    document.getElementById('display').style.fontSize = 40
+  };
+});
+
 
 document.addEventListener('keyup', (e) => {
   codeChain.push(e.key)
