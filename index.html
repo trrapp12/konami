@@ -22,15 +22,16 @@ h4 {
   box-shadow: border-box;
   color: white;
   z-index: 10;
-  margin-left: 76px;
+  margin-left: 100px;
   margin-top: 20px;
   text-align: left;
   font-size: 50px;
-  height: 50px;
+  height: 60px;
   padding-left: 10px;
   width: 572px;
   transition: all 1s cubic-bezier(0, 1.14, 0.82, 1.02);
   text-overflow: ellipsis;
+  overflow-y: hidden;
 }
 
 #background > #display > #display1 {
@@ -235,7 +236,7 @@ var myfontsize = 100
 var x = 1
 // variables for storing text
 const secretCode ="ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba"
-const codeChain = [];
+var codeChain = [];
 
 document.addEventListener('keypress', (e) => {
 
@@ -294,6 +295,8 @@ document.addEventListener('keyup', (e) => {
     document.getElementById('display').style.fontSize = 50  }
   else {
     document.getElementById('display').style.fontSize = 40
+    document.getElementById('display').style.height = 96
+    document.getElementById('display').style.marginTop = 3
   };
 });
 
@@ -313,9 +316,9 @@ window.addEventListener('keyup', (e) => {
     // document.getElementById('display').style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
     // document.getElementById('display1').style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
 
-    window.open("https://www.youtube.com/watch?v=YBMQhKK3Ctk","Contra","resizable,status") 
-
-
+    window.open("https://www.youtube.com/watch?v=YBMQhKK3Ctk","Contra","resizable,status");
+    codeChain = []
+    console.log("you won" + codeChain)
   }
 
 });
