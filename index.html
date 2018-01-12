@@ -304,16 +304,18 @@ window.addEventListener('keyup', (e) => {
   codeChain.push(e.key);
   codeChain.splice(-secretCode.length -1, codeChain.length - secretCode.length);
   if (codeChain.join('').includes(secretCode)) {
-    document.body.style.background = "url('assets/konamibetter.jpg')"
-    document.getElementById('background').style.display = "none"
-    document.getElementById('display').style.display = "none"
-    document.getElementById('display1').style.display = "none"
-    document.body.style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
-    document.getElementById('background').style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
-    document.getElementById('display').style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
-    document.getElementById('display1').style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
+    // document.body.style.background = "url('assets/konamibetter.jpg')"
+    // document.getElementById('background').style.display = "none"
+    // document.getElementById('display').style.display = "none"
+    // document.getElementById('display1').style.display = "none"
+    // document.body.style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
+    // document.getElementById('background').style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
+    // document.getElementById('display').style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
+    // document.getElementById('display1').style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
 
-    // transition: all 1s cubic-bezier(0, 1.14, 0.82, 1.02);
+    window.open("https://www.youtube.com/watch?v=YBMQhKK3Ctk","Contra","resizable,status") 
+
+
   }
 
 });
