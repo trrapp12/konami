@@ -47,7 +47,7 @@ h4 {
   position: absolute;
   top: 22vh;
   width: 80%;
-  height: 100px;
+  height: auto;
   font-family: courier;
   text-align: center;
   margin-left: calc((100% - 84%) / 2);
@@ -95,7 +95,8 @@ h4 {
   font-family: courier;
   font-size: 89px;
   color: white;
-  text-shadow: 1px 1px 7px rgba(255, 255, 255, 0.72);
+  text-shadow: 1px 1px 7px rgb(255 255 255 / 72%);
+  display: flex;
 }
 
 #display::after {
@@ -295,7 +296,7 @@ document.addEventListener('keyup', (e) => {
     document.getElementById('display').style.fontSize = 50  }
   else {
     document.getElementById('display').style.fontSize = 40
-    document.getElementById('display').style.height = 96
+    document.getElementById('display').style.height = "auto";
     document.getElementById('display').style.marginTop = 3
   };
 });
@@ -306,16 +307,8 @@ window.addEventListener('keyup', (e) => {
   // const codeChain = [];
   codeChain.push(e.key);
   codeChain.splice(-secretCode.length -1, codeChain.length - secretCode.length);
-  if (codeChain.join('').includes(secretCode)) {
-    // document.body.style.background = "url('assets/konamibetter.jpg')"
-    // document.getElementById('background').style.display = "none"
-    // document.getElementById('display').style.display = "none"
-    // document.getElementById('display1').style.display = "none"
-    // document.body.style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
-    // document.getElementById('background').style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
-    // document.getElementById('display').style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
-    // document.getElementById('display1').style.transition = "all 1s cubic-bezier(0, 1.14, 0.82, 1.02)"
 
+  if (codeChain.join('').includes(secretCode)) {
     window.open("https://www.youtube.com/watch?v=YBMQhKK3Ctk","Contra","resizable,status");
     codeChain = []
     console.log("you won" + codeChain)
