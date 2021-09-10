@@ -1,10 +1,10 @@
-﻿# Nasa_Photo_Get_Request v1.0
+﻿# Konami
 
 ##### Contributors: Trevor Rapp
 
 <br>
 
-
+![Konami GIF](https://user-images.githubusercontent.com/11747875/132800467-1b0628e5-27f1-426a-bf2f-4ba83108ebd3.gif)
 
 ---
 
@@ -18,14 +18,13 @@
 ### Description:
 ---
 
-This is a personal passion project I started to challenge myself to learn how to connect to an API.  The original v1.0 demonstrates the following:
+This is a personal passion project I started when I learned that there was such a thing as a key listener.  Obviously this isn't a full-blown one, but if figured if I could find a way to display everything that was typed on a screen it would be a harmless was to practice listening for key events and managing the information gained from them.  
 
-- [x] Use of vanilla JavaScript to connect to an API.
-- [x] ```JSON.parse().```
-- [x] Iterating through a JS object.
-- [x] Use of ```Math.floor()``` and ```Math.random()``` to generate a random number between 1 and 10.
+- [x] Use of Javascript keydown and keyup listeners.
+- [x] DOM manipulation with ```document.addEventListener()``` and ```window.addEventListener```; 
+- [x] ```.push()```
+- [x] ```.splice()```
 - [x] Use of ```querySelector()``` and ```querySelectorAll()```.
-- [x] Use of template literals `` ` ``  and placeholders `&{}`.
 
 <br/>
 <br/>
@@ -34,25 +33,25 @@ This is a personal passion project I started to challenge myself to learn how to
 ---
 
 1. Create a Folder to hold the program
- > - in the terminal type `mkdir NASA_Photo_Get_Request` or whatever other name you want to call it. 
- > - navigate into the folder by typing `cd NASA_Photo_Get_Request`
- > - clone the program into the "NASA_Photo_Get_Request" folder you just created by typing: 
+ > - in the terminal type `mkdir konami` or whatever other name you want to call it. 
+ > - navigate into the folder by typing `cd konami`
+ > - clone the program into the "Konami" folder you just created by typing: 
  
  ```
- git clone https://github.com/trrapp12/Nasa_Photo_Get_Request.git
+ git clone https://github.com/trrapp12-ironyard/konami.git
  ```
   <br/>
   
-2. Make sure you are still in the NASA_Photo_Get_Request folder.
+2. Make sure you are still in the Konami folder.
  <br/>
  
-3. From the NASA_Photo_Get_Request folder, on the terminal, type `cd NASA_Photo_Get_Request`. 
+3. From the NASA_Photo_Get_Request folder, on the terminal, type `cd konami`. 
 <br/>
 
 4. Type `start index.html` to run the program from the terminal. 
 <br/>
 
-5. Click on the button to make a GET request and see the information populate below!
+5. Type in different combinations to letters and characters to see if you can guess the secret!
 
 <br/>
 <br/>
@@ -60,10 +59,10 @@ This is a personal passion project I started to challenge myself to learn how to
 
 ### Next Steps for my v.2.0:
 ---
-- [ ] Learning how to secure the API key according to reasonable industry security measures while still allowing the project to be accessible.
-- [ ] Create functions to iterate through the objects and pull out the information from the object.
-- [ ] Display photos and information in a better UX/UI experience.
-- [ ] integrate React.JS to create use MVC to create templates for all the information.
+- [ ] Integrate a cool parallax JS library with the All Seeing Eye in the background
+- [ ] Or integrate a cool effect where it looks like a hacker typing code in the background
+- [ ] Make the CSS generally more stunning
+- [ ] Create a feature where if you hit the delete button it deletes the character on the display
 
 <br/>
 <br/>
