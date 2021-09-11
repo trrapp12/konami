@@ -50,6 +50,8 @@ function boxShadowPulse () {
 
 
 boxShadowPulse ();
+
+
 // function stopPulse () {
 //   document.getElementById('display1').style.webkitBoxShadow = "rgb(191, 189, 189) 0px 1px 26px 1px inset, rgb(99, 97, 97) 1px 9px 77px -4px";
 //   clearInterval()
