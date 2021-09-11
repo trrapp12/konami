@@ -4,137 +4,8 @@
   <title>konami</title>
 </head>
 <style>
-
-* {
-  height: 100vh;
-  width: 100vw;
-  margin: 0;
-  border: 0;
-}
-body {
-    background-color: #000000;
-    height: 100vh;
-    width: 100vw;
-    transition: all 5s cubic-bezier(0, 1.14, 0.82, 1.02);
-}
-
-h4 {
-  box-shadow: border-box;
-  color: white;
-  z-index: 10;
-  margin-left: 100px;
-  margin-top: 20px;
-  text-align: left;
-  font-size: 50px;
-  height: 60px;
-  padding-left: 10px;
-  width: 572px;
-  transition: all 1s cubic-bezier(0, 1.14, 0.82, 1.02);
-  text-overflow: ellipsis;
-  overflow-y: hidden;
-}
-
-#background > #display > #display1 {
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: left;
-  transition: all 5s cubic-bezier(0, 1.14, 0.82, 1.02);
-}
-
-#background > #display1 {
-  opacity: 1.0 !important;
-  position: absolute;
-  top: 22vh;
-  width: 80%;
-  height: auto;
-  font-family: courier;
-  text-align: center;
-  margin-left: calc((100% - 84%) / 2);
-  margin-right: calc((100% - 84%) / 2);
-  font-size: .85em;
-  overflow: hidden;
-  /* box-shadow: inset 0px 1px 26px 1px #BFBDBD,1px 9px 77px -4px #636161;
-  -webkit-box-shadow: inset 0px 1px 26px 1px #BFBDBD,1px 9px 77px -4px #636161;
-  -moz-box-shadow: inset 0px 1px 26px 1px #BFBDBD,1px 9px 77px -4px #636161;
-  -o-box-shadow: inset 0px 1px 26px 1px #BFBDBD,1px 9px 77px -4px #636161; */
-  padding: 40px 40px 40px 40px;
-  z-index: 10;
-  text-shadow: none;
-  transition: all 3s cubic-bezier(0, 1.14, 0.82, 1.02);
-}
-#background {
-  display: inline-block;
-  position: relative;
-  text-shadow: 0px 0px 10px rgba(0,225,0,0.9);
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  font-family: courier;
-  text-align: center;
-  /* font-size: 400px; */
-  width: 80%;
-  height: 100%;
-  margin-right: auto;
-  margin-left: calc((100% - 80%) / 2);
-  margin-top: 20vh;
-  /*this will make it so that a continual string of characters that is seen as one word will break across the page*/
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  transition: all 1s cubic-bezier(0, 1.14, 0.82, 1.02);
-  z-index: -10;
-}
-.cli {
-  position: absolute;
-  margin-left: 0%;
-  margin-right: 90%;
-  width: 14%;
-  height: auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-family: courier;
-  font-size: 89px;
-  color: white;
-  text-shadow: 1px 1px 7px rgb(255 255 255 / 72%);
-  display: flex;
-}
-
-#display::after {
-  content: "|";
-  animation-name: blinker;
-  animation-duration: 1s;
-  top: -2px;
-
-  animation-name: blinker;
-animation-duration: 1s;
-animation-timing-function: ease-in-ease-out;
-animation-iteration-count: 3000;
-
--webkit-animation-name: blinker;
--webkit-animation-duration: 1s;
--webkit-animation-timing-function: ease-in-ease-out;
--webkit-animation-iteration-count: 3000;
-}
-
-@-moz-keyframes blinker {  /* Decimal not necessary, 0 and 1 is enough */
-0% { opacity: 1.0; }
-50% { opacity: 0.0; }
-100% { opacity: 1.0; }
-}
-
-@-webkit-keyframes blinker {
-0% { opacity: 1.0; }
-50% { opacity: 0.0; }
-100% { opacity: 1.0; }
-}
-
-@keyframes blinker {
-0% { opacity: 1.0; }
-50% { opacity: 0.0; }
-100% { opacity: 1.0; }
-}
-
 </style>
+<link rel="stylesheet" type="text/css" href="./css/main.css">
 <body>
   <div id="background">
     <div id="display1">
@@ -284,6 +155,7 @@ function boxShadowPulse () {
 
 function stopPulse () {
   document.getElementById('display1').style.webkitBoxShadow = "rgb(191, 189, 189) 0px 1px 26px 1px inset, rgb(99, 97, 97) 1px 9px 77px -4px";
+  clearInterval()
 }
 
 window.addEventListener('keydown', function () {
