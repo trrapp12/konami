@@ -48,21 +48,14 @@ function boxShadowPulse () {
 
 }
 
-function stopPulse () {
-  document.getElementById('display1').style.webkitBoxShadow = "rgb(191, 189, 189) 0px 1px 26px 1px inset, rgb(99, 97, 97) 1px 9px 77px -4px";
-  clearInterval()
-}
 
-window.addEventListener('keydown', function () {
-  stopPulse();
-})
-window.addEventListener('mousemove', function () {
-  console.log("mouseenter fired: " + boxShadowPulse())
-  boxShadowPulse();
-});
-
-
-function addMovie () {
-  var iframe = "<iframe width='560' height='315' src='https://www.youtube.com/embed/YBMQhKK3Ctk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
-
-}
+boxShadowPulse ();
+// function stopPulse () {
+//   document.getElementById('display1').style.webkitBoxShadow = "rgb(191, 189, 189) 0px 1px 26px 1px inset, rgb(99, 97, 97) 1px 9px 77px -4px";
+//   clearInterval()
+// }
+//
+// function addMovie () {
+//   var iframe = "<iframe width='560' height='315' src='https://www.youtube.com/embed/YBMQhKK3Ctk' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>";
+//
+// }
