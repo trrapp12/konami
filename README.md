@@ -4,7 +4,7 @@
 
 <br>
 
-![Konami GIF](https://user-images.githubusercontent.com/11747875/132800467-1b0628e5-27f1-426a-bf2f-4ba83108ebd3.gif)
+![Konami GIF](https://user-images.githubusercontent.com/11747875/132816836-e64ed5b3-8f68-43da-a730-b2d79b1d55d2.gif)
 
 ---
 
