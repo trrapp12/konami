@@ -1,4 +1,13 @@
 ﻿# Konami
+ 
+---
+
+<br>
+
+
+
+
+<br>
 
 ##### Contributors: Trevor Rapp
 
