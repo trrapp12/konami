@@ -2,8 +2,7 @@ var keytotal = 0;
 var myfontsize = 100;
 var x = 1;
 // variables for storing text
-const secretCode ="ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba";
-var codeChain = [];
+
 
 document.addEventListener('keypress', (e) => {
 
@@ -39,8 +38,10 @@ document.addEventListener('keyup', (e) => {
 
 
 window.addEventListener('keyup', (e) => {
-  // const secretCode ="ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba"
-  // const codeChain = [];
+
+  const secretCode ="ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba";
+  var codeChain = [];
+
   codeChain.push(e.key);
   codeChain.splice(-secretCode.length -1, codeChain.length - secretCode.length);
 
