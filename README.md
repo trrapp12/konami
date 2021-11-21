@@ -1,4 +1,13 @@
 ﻿# Konami
+ 
+---
+
+<br>
+
+[![Button60](https://user-images.githubusercontent.com/11747875/141862863-396ab1ee-36db-45fc-bdf9-857cc75ef75b.png)](https://trrapp12-ironyard.github.io/konami/)
+
+
+<br>
 
 ##### Contributors: Trevor Rapp
 
