@@ -1,46 +1,29 @@
-var keytotal = 0;
-var myfontsize = 100;
-var x = 1;
-// variables for storing text
 
+document.addEventListener('keydown', (e) => {
 
-document.addEventListener('keypress', (e) => {
+      let background = document.getElementById('background');
+      let displayArea = document.getElementById('display');
 
-      keytotal += 1;
-      x = 0;
-      myfontsize -= x;
-      console.log (keytotal);
-      console.log (myfontsize);
-      const keypressed = event.key;
-      // document.getElementById('display').innerHTML += keypressed
+      if ( e.key === "Backspace" || e.key === "Delete" ) {
+        // console.log("delete or backspace hit")
+        let newWords = displayArea.innerText.substring(0, (displayArea.innerText.length - 1));
+        background.innerText = newWords;
+        background.style.textShadow = "0px 0px 3px rgba(0,225,0,0.9)";
+        displayArea.innerText = newWords;
 
-      document.getElementById('background').innerHTML += keypressed;
-      // document.getElementById('background').style.fontSize = myfontsize
-      document.getElementById('background').style.textShadow = "0px 0px 3px rgba(0,225,0,0.9)";
-      document.getElementById('display').innerHTML += keypressed;
+      } else {
 
-
-
-  console.log(myfontsize);
+        background.innerHTML += e.key;
+        background.style.textShadow = "0px 0px 3px rgba(0,225,0,0.9)";
+        document.getElementById('display').innerText += e.key;
+      }
 
 });
-
-document.addEventListener('keyup', (e) => {
-
-  if (keytotal < 20) {
-    document.getElementById('display').style.fontSize = 50;  }
-  else {
-    document.getElementById('display').style.fontSize = 40;
-    document.getElementById('display').style.height = "auto";
-    document.getElementById('display').style.marginTop = 3;
-  }
-});
-
 
 window.addEventListener('keyup', (e) => {
 
   const secretCode ="ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba";
-  var codeChain = [];
+  let codeChain = [];
 
   codeChain.push(e.key);
   codeChain.splice(-secretCode.length -1, codeChain.length - secretCode.length);
