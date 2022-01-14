@@ -20,12 +20,14 @@
 <img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
 <img align="left" alt="CSS3" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
 <img align="left" alt="JavaScript" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
+
+<br>
 <br>
 
 ---
 
 ### Description:
----
+
 
 This is a personal passion project I started when I learned that there was such a thing as a key listener.  Obviously this isn't a full-blown one, but if figured if I could find a way to display everything that was typed on a screen it would be a harmless was to practice listening for key events and managing the information gained from them.  
 
@@ -35,11 +37,13 @@ This is a personal passion project I started when I learned that there was such 
 - [x] ```.splice()```
 - [x] Use of ```querySelector()``` and ```querySelectorAll()```.
 
-<br/>
-<br/>
+<br>
+<br>
+
+---
 
 ### Instructions on how to launch:
----
+
 
 1. Create a Folder to hold the program
  > - in the terminal type `mkdir konami` or whatever other name you want to call it. 
@@ -49,35 +53,33 @@ This is a personal passion project I started when I learned that there was such 
  ```
  git clone https://github.com/trrapp12-ironyard/konami.git
  ```
-  <br/>
   
 2. Make sure you are still in the Konami folder.
- <br/>
  
 3. From the NASA_Photo_Get_Request folder, on the terminal, type `cd konami`. 
-<br/>
 
 4. Type `start index.html` to run the program from the terminal. 
-<br/>
 
 5. Type in different combinations to letters and characters to see if you can guess the secret!
 
-<br/>
-<br/>
+<br>
+<br>
 
+---
 
 ### Next Steps for my v.2.0:
----
+
 - [ ] Integrate a cool parallax JS library with the All Seeing Eye in the background
 - [ ] Or integrate a cool effect where it looks like a hacker typing code in the background
 - [ ] Make the CSS generally more stunning
 - [ ] Create a feature where if you hit the delete button it deletes the character on the display
+<br>
+<br>
 
-<br/>
-<br/>
+---
+
 
 ### More Information:
----
 
 \**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037), or return to my [Github](https://github.com/trrapp12)*
 
