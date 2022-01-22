@@ -1,15 +1,14 @@
-﻿# Konami
- 
+# Konami
+
+
+##### Contributors: Trevor Rapp, Wes Bos
+
 ---
 
 <br>
 
 [![Button60](https://user-images.githubusercontent.com/11747875/141862863-396ab1ee-36db-45fc-bdf9-857cc75ef75b.png)](https://trrapp12-ironyard.github.io/konami/)
 
-
-<br>
-
-##### Contributors: Trevor Rapp
 
 <br>
 
@@ -82,6 +81,3 @@ This is a personal passion project I started when I learned that there was such 
 ### More Information:
 
 \**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037), or return to my [Github](https://github.com/trrapp12)*
-
-
-
