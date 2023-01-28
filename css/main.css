@@ -30,19 +30,8 @@ body:before {
   width: 100%;
 }
 
-h4 {
-  box-shadow: border-box;
-  color: white;
-  font-size: 50px;
-  height: auto;
-  margin: auto;
-  overflow-y: hidden;
-  padding-left: 10px;
-  text-align: left;
-  text-overflow: ellipsis;
-  transition: all 1s cubic-bezier(0, 1.14, 0.82, 1.02);
-  width: 572px;
-  z-index: 10;
+::placeholder {
+  text-align: center;
 }
 
 /*-------------------------------------CLASSES-------------------------------------*/
@@ -51,7 +40,7 @@ h4 {
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  display: flex;
+  display: block;
   font-family: courier;
   overflow-wrap: break-word;
   position: relative;
@@ -74,13 +63,26 @@ h4 {
   width: 14%;
 }
 
+.display {
+  box-shadow: border-box;
+  color: white;
+  font-size: 50px;
+  height: auto;
+  margin: auto;
+  overflow-y: hidden;
+  padding-left: 10px;
+  text-align: left;
+  text-overflow: ellipsis;
+  transition: all 1s cubic-bezier(0, 1.14, 0.82, 1.02);
+  z-index: 10;
+}
+
 .display1 {
   display: flex;
   height: fit-content;
   font-family: courier;
   font-size: .85em;
   margin: auto;
-  overflow: hidden;
   padding: 40px 40px 40px 40px;
   text-align: center;
   text-shadow: none;

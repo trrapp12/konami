@@ -33,7 +33,7 @@ function boxShadowPulse () {
     }
   }
 
-  setInterval(switchStyleState, 500)
+  setInterval(switchStyleState, 10000)
 
 }
 
