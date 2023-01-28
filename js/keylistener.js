@@ -1,3 +1,5 @@
+const secretCode ="ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba";
+let codeChain = [];
 
 document.addEventListener('keydown', (e) => {
 
@@ -14,12 +16,8 @@ document.addEventListener('keydown', (e) => {
 });
 
 window.addEventListener('keyup', (e) => {
-
-  const secretCode ="ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba";
-  let codeChain = [];
-
+  
   codeChain.push(e.key);
-  codeChain.splice(-secretCode.length -1, codeChain.length - secretCode.length);
 
   if (codeChain.join('').includes(secretCode)) {
     window.open("https://www.youtube.com/watch?v=YBMQhKK3Ctk","Contra","resizable,status");
