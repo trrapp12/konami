@@ -40,7 +40,7 @@ body:before {
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  display: block;
+  display: flex;
   font-family: courier;
   overflow-wrap: break-word;
   position: relative;
