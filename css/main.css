@@ -4,11 +4,26 @@
   margin: 0;
   border: 0;
 }
+
 body {
-    background-color: #000000;
-    height: 100vh;
-    width: 100vw;
-    transition: all 5s cubic-bezier(0, 1.14, 0.82, 1.02);
+  background-color: #000000;
+  height: 100vh;
+  width: 100vw;
+  transition: all 5s cubic-bezier(0, 1.14, 0.82, 1.02);
+}
+
+body:before {
+  background-image: url(https://user-images.githubusercontent.com/11747875/215290613-8f295e44-9365-45ec-8bac-848a59ba7087.png);
+  background-size: cover;
+  background-repeat: none;
+  background-position: center;
+  content: '';
+  opacity: .5;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 h4 {
@@ -27,7 +42,7 @@ h4 {
   overflow-y: hidden;
 }
 
-#background > #display > #display1 {
+#background>#display>#display1 {
   width: 80%;
   margin-right: auto;
   margin-left: auto;
@@ -35,8 +50,7 @@ h4 {
   transition: all 5s cubic-bezier(0, 1.14, 0.82, 1.02);
 }
 
-#background > #display1 {
-  opacity: 1.0 !important;
+#background>#display1 {
   position: absolute;
   top: 22vh;
   width: 80%;
@@ -47,19 +61,16 @@ h4 {
   margin-right: calc((100% - 84%) / 2);
   font-size: .85em;
   overflow: hidden;
-  /* box-shadow: inset 0px 1px 26px 1px #BFBDBD,1px 9px 77px -4px #636161;
-  -webkit-box-shadow: inset 0px 1px 26px 1px #BFBDBD,1px 9px 77px -4px #636161;
-  -moz-box-shadow: inset 0px 1px 26px 1px #BFBDBD,1px 9px 77px -4px #636161;
-  -o-box-shadow: inset 0px 1px 26px 1px #BFBDBD,1px 9px 77px -4px #636161; */
   padding: 40px 40px 40px 40px;
   z-index: 10;
   text-shadow: none;
   transition: all 3s cubic-bezier(0, 1.14, 0.82, 1.02);
 }
+
 #background {
   display: inline-block;
   position: relative;
-  text-shadow: 0px 0px 10px rgba(0,225,0,0.9);
+  text-shadow: 0px 0px 10px rgba(0, 225, 0, 0.9);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
@@ -77,6 +88,7 @@ h4 {
   transition: all 1s cubic-bezier(0, 1.14, 0.82, 1.02);
   z-index: -10;
 }
+
 .cli {
   position: absolute;
   margin-left: 0%;
@@ -99,30 +111,56 @@ h4 {
   top: -2px;
 
   animation-name: blinker;
-animation-duration: 1s;
-animation-timing-function: ease-in-ease-out;
-animation-iteration-count: 3000;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-ease-out;
+  animation-iteration-count: 3000;
 
--webkit-animation-name: blinker;
--webkit-animation-duration: 1s;
--webkit-animation-timing-function: ease-in-ease-out;
--webkit-animation-iteration-count: 3000;
+  -webkit-animation-name: blinker;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-ease-out;
+  -webkit-animation-iteration-count: 3000;
 }
 
-@-moz-keyframes blinker {  /* Decimal not necessary, 0 and 1 is enough */
-0% { opacity: 1.0; }
-50% { opacity: 0.0; }
-100% { opacity: 1.0; }
+@-moz-keyframes blinker {
+
+  /* Decimal not necessary, 0 and 1 is enough */
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
 }
 
 @-webkit-keyframes blinker {
-0% { opacity: 1.0; }
-50% { opacity: 0.0; }
-100% { opacity: 1.0; }
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
 }
 
 @keyframes blinker {
-0% { opacity: 1.0; }
-50% { opacity: 0.0; }
-100% { opacity: 1.0; }
+  0% {
+    opacity: 1.0;
+  }
+
+  50% {
+    opacity: 0.0;
+  }
+
+  100% {
+    opacity: 1.0;
+  }
 }
