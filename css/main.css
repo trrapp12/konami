@@ -1,9 +1,13 @@
+/*-------------------------------------NORMALIZE CONTENT-------------------------------------*/
+
 * {
   height: 100vh;
   width: 100vw;
   margin: 0;
   border: 0;
 }
+
+/*-------------------------------------ELEMENTS-------------------------------------*/
 
 body {
   background-color: #000000;
@@ -30,8 +34,7 @@ h4 {
   box-shadow: border-box;
   color: white;
   z-index: 10;
-  margin-left: 100px;
-  margin-top: 20px;
+  margin: auto;
   text-align: left;
   font-size: 50px;
   height: auto;
@@ -42,47 +45,16 @@ h4 {
   overflow-y: hidden;
 }
 
-#background>#display>#display1 {
-  width: 80%;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: left;
-  transition: all 5s cubic-bezier(0, 1.14, 0.82, 1.02);
-}
+/*-------------------------------------CLASSES-------------------------------------*/
 
-#background>#display1 {
-  position: absolute;
-  top: 22vh;
-  width: 80%;
-  height: auto;
-  font-family: courier;
-  text-align: center;
-  margin-left: calc((100% - 84%) / 2);
-  margin-right: calc((100% - 84%) / 2);
-  font-size: .85em;
-  overflow: hidden;
-  padding: 40px 40px 40px 40px;
-  z-index: 10;
-  text-shadow: none;
-  transition: all 3s cubic-bezier(0, 1.14, 0.82, 1.02);
-}
-
-#background {
-  display: inline-block;
+.background {
+  display: flex;
   position: relative;
   text-shadow: 0px 0px 10px rgba(0, 225, 0, 0.9);
   -webkit-background-clip: text;
   -moz-background-clip: text;
   background-clip: text;
   font-family: courier;
-  text-align: center;
-  /* font-size: 400px; */
-  width: 80%;
-  height: 100%;
-  margin-right: auto;
-  margin-left: calc((100% - 80%) / 2);
-  margin-top: 20vh;
-  /*this will make it so that a continual string of characters that is seen as one word will break across the page*/
   overflow-wrap: break-word;
   word-wrap: break-word;
   transition: all 1s cubic-bezier(0, 1.14, 0.82, 1.02);
@@ -104,22 +76,39 @@ h4 {
   display: flex;
 }
 
-#display::after {
+.display1 {
+  position: absolute;
+  top: 22vh;
+  width: 80%;
+  height: auto;
+  font-family: courier;
+  text-align: center;
+  margin-left: calc((100% - 84%) / 2);
+  margin-right: calc((100% - 84%) / 2);
+  font-size: .85em;
+  overflow: hidden;
+  padding: 40px 40px 40px 40px;
+  z-index: 10;
+  text-shadow: none;
+  transition: all 3s cubic-bezier(0, 1.14, 0.82, 1.02);
+}
+
+.display::after {
   content: "|";
   animation-name: blinker;
   animation-duration: 1s;
   top: -2px;
-
   animation-name: blinker;
   animation-duration: 1s;
   animation-timing-function: ease-in-ease-out;
   animation-iteration-count: 3000;
-
   -webkit-animation-name: blinker;
   -webkit-animation-duration: 1s;
   -webkit-animation-timing-function: ease-in-ease-out;
   -webkit-animation-iteration-count: 3000;
 }
+
+/*-------------------------------------KEYFRAMES-------------------------------------*/
 
 @-moz-keyframes blinker {
 

@@ -5,14 +5,14 @@ function boxShadowPulse () {
   var styleState = function () {
 
     var testCurrentStyle = getComputedStyle(document.getElementById('display1')).boxShadow;
-    var currentStyle = JSON.stringify(testCurrentStyle).includes("rgb(213, 137, 134) 0px 1px 26px 1px inset, rgb(99, 97, 97) 1px 9px 77px -4px");
+    var currentStyle = JSON.stringify(testCurrentStyle).includes("rgb(255, 255, 255) 0px 1px 26px 1px inset, rgb(99, 97, 97) 1px 9px 77px -4px");
     return currentStyle;
   };
 
   function styleOn () {
 
-    document.getElementById('display1').style.boxShadow = "rgb(213, 137, 134) 0px 1px 26px 1px inset, rgb(99, 97, 97) 1px 9px 77px -4px";
-    document.getElementById('display1').style.webkitBoxShadow = "rgb(213, 137, 134) 0px 1px 26px 1px inset, rgb(99, 97, 97) 1px 9px 77px -4px";
+    document.getElementById('display1').style.boxShadow = "rgb(255, 255, 255) 0px 1px 26px 1px inset, rgb(99, 97, 97) 1px 9px 77px -4px";
+    document.getElementById('display1').style.webkitBoxShadow = "rgb(255, 255, 255) 0px 1px 26px 1px inset, rgb(99, 97, 97) 1px 9px 77px -4px";
 
   }
 
