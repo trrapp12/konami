@@ -1,5 +1,6 @@
 const secretCode ="ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba";
 let codeChain = [];
+let ignoreValues = ['Shift', 'Control', 'Alt', 'Escape', 'CapsLock', 'Pause', 'Home', 'PageUp', 'PageDown', 'End', 'Home', 'PrintScreen', 'Insert']
 
 document.addEventListener('keydown', (e) => {
 
@@ -9,6 +10,8 @@ document.addEventListener('keydown', (e) => {
         let newWords = displayArea.innerText.substring(0, (displayArea.innerText.length - 1));
         displayArea.innerText = newWords;
 
+      } else if (ignoreValues.includes(e.key)) {
+        console.log('ignore character')
       } else {
         document.getElementById('display').innerText += e.key;
       }
