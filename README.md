@@ -7,13 +7,19 @@
 
 <br>
 
+https://user-images.githubusercontent.com/11747875/215296892-b8196e63-7df5-47ba-bd1f-f52aedf5d254.mp4
+
+<br>
+
+<br>
+
 [![Button60](https://user-images.githubusercontent.com/11747875/141862863-396ab1ee-36db-45fc-bdf9-857cc75ef75b.png)](https://trrapp12.github.io/konami/)
 
 
 <br>
 
-![Konami GIF](https://user-images.githubusercontent.com/11747875/132816836-e64ed5b3-8f68-43da-a730-b2d79b1d55d2.gif)
-![Konami Video](https://user-images.githubusercontent.com/11747875/215296892-b8196e63-7df5-47ba-bd1f-f52aedf5d254.mp4)
+
+
 
 ---
 
