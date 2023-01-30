@@ -14,6 +14,7 @@ body {
   height: 100vh;
   transition: all 5s cubic-bezier(0, 1.14, 0.82, 1.02);
   width: 100vw;
+  pointer-events: all;
 }
 
 body:before {
@@ -30,10 +31,6 @@ body:before {
   width: 100%;
 }
 
-::placeholder {
-  text-align: center;
-}
-
 /*-------------------------------------CLASSES-------------------------------------*/
 
 .background {
@@ -47,12 +44,25 @@ body:before {
   text-shadow: 0px 0px 10px rgba(0, 225, 0, 0.9);
   transition: all 1s cubic-bezier(0, 1.14, 0.82, 1.02);
   word-wrap: break-word;
-  z-index: -10;
+}
+
+.circle {
+  border: rgba(255, 255, 255, .7);
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  height: 25px;
+  left: 0%;
+  margin: auto;
+  width: 25px;
+  position: absolute;
+  top: 25vh;
+  overflow: hidden;
 }
 
 .cli {
   align-content: center;
-  color: white;
+  color: rgba(255, 255, 255, 0.1);
   display: flex;
   font-family: courier;
   font-size: 89px;
@@ -65,7 +75,7 @@ body:before {
 
 .display {
   box-shadow: border-box;
-  color: white;
+  color: rgba(255, 255, 255, .4);
   font-size: 50px;
   height: auto;
   margin: auto;
@@ -105,6 +115,46 @@ body:before {
   -webkit-animation-iteration-count: 3000;
   content: "|";
   top: -2px;
+}
+
+.title {
+  position: absolute;
+  top: 0vh;
+  left: 66%;
+  height: 27vh;
+  width: 34%;
+  overflow: hidden;
+  z-index: 100;
+  border-bottom: 5px solid rgba(255, 255, 255, .7);
+  transition-duration: 2s;
+  transition-property: top;
+}
+
+.title::after {
+  content: 'Can you crack the Konami Code?';
+  display: none;
+  height: 100%;
+  width: 100%;
+}
+
+.title--h1 {
+  width: fit-content;
+  height: 100%;
+  position: absolute;
+  top: 7vh;
+  left: 0;
+  font-size: 4rem;
+  word-break: break-word;
+  text-shadow: 0px 0px 10px rgb(255 255 255 / 100%);
+  transition-duration: 2s;
+  transition-property: top;
+}
+
+.hidden {
+  top: 27vh;
+  position: absolute;
+  transition-duration: 2s;
+  transition-property: top;
 }
 
 /*-------------------------------------KEYFRAMES-------------------------------------*/
@@ -152,3 +202,18 @@ body:before {
     opacity: 1.0;
   }
 }
+
+/* @media screen and (max-width: 900px) {
+  .title--h1 {
+    width: fit-content;
+    height: 100%;
+    position: absolute;
+    top: -40vh;
+    left: 0;
+    font-size: 4rem;
+    word-break: break-word;
+    text-shadow: 0px 0px 10px rgb(255 255 255 / 100%);
+    transition-duration: 2s;
+    transition-property: top;
+  }
+} */
