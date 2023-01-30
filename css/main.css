@@ -5,6 +5,7 @@
   height: 100vh;
   margin: 0;
   width: 100vw;
+  font-family: courier;
 }
 
 /*-------------------------------------ELEMENTS-------------------------------------*/
@@ -31,6 +32,32 @@ body:before {
   width: 100%;
 }
 
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 20vh;
+  width: 34%;
+  overflow: hidden;
+  z-index: 100;
+  border-top: 5px solid rgba(255, 255, 255, .7);
+  transition-duration: 2s;
+  transition-property: top;
+  padding: 2rem;
+}
+
+p,
+li {
+  width: fit-content;
+  color: rgba(255, 255, 255, .8);
+  height: min-content;
+  word-break: break-word;
+  text-shadow: 0px 0px 10px #D99A25;
+  transition-duration: 2s;
+  transition-property: top;
+  line-height: 150%;
+}
+
 /*-------------------------------------CLASSES-------------------------------------*/
 
 .background {
@@ -38,7 +65,6 @@ body:before {
   -webkit-background-clip: text;
   -moz-background-clip: text;
   display: flex;
-  font-family: courier;
   overflow-wrap: break-word;
   position: relative;
   text-shadow: 0px 0px 10px rgba(0, 225, 0, 0.9);
@@ -46,17 +72,21 @@ body:before {
   word-wrap: break-word;
 }
 
-.circle {
+.bold {
+  font-weight: 800;
+}
+
+.bottom-circle {
   border: rgba(255, 255, 255, .7);
   border-radius: 50%;
   border-style: solid;
   border-width: 5px;
   height: 25px;
-  left: 0%;
-  margin: auto;
+  right: 0%;
+  /* margin: auto; */
   width: 25px;
   position: absolute;
-  top: 25vh;
+  top: -2vh;
   overflow: hidden;
 }
 
@@ -64,7 +94,6 @@ body:before {
   align-content: center;
   color: rgba(255, 255, 255, 0.1);
   display: flex;
-  font-family: courier;
   font-size: 89px;
   height: fit-content;
   justify-content: center;
@@ -90,7 +119,6 @@ body:before {
 .display1 {
   display: flex;
   height: fit-content;
-  font-family: courier;
   font-size: .85em;
   margin: auto;
   padding: 40px 40px 40px 40px;
@@ -115,6 +143,24 @@ body:before {
   -webkit-animation-iteration-count: 3000;
   content: "|";
   top: -2px;
+}
+
+.extra-space {
+  margin-top: 20px;
+}
+
+.fine-print,
+li {
+  font-size: .75rem;
+  line-height: 120%;
+  padding: 0;
+}
+
+.hidden {
+  top: 27vh;
+  position: absolute;
+  transition-duration: 2s;
+  transition-property: top;
 }
 
 .title {
@@ -150,12 +196,21 @@ body:before {
   transition-property: top;
 }
 
-.hidden {
-  top: 27vh;
+.top-circle {
+  border: rgba(255, 255, 255, .7);
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 5px;
+  height: 25px;
+  left: 0%;
+  margin: auto;
+  width: 25px;
   position: absolute;
-  transition-duration: 2s;
-  transition-property: top;
+  top: 25vh;
+  overflow: hidden;
 }
+
+
 
 /*-------------------------------------KEYFRAMES-------------------------------------*/
 
@@ -202,18 +257,3 @@ body:before {
     opacity: 1.0;
   }
 }
-
-/* @media screen and (max-width: 900px) {
-  .title--h1 {
-    width: fit-content;
-    height: 100%;
-    position: absolute;
-    top: -40vh;
-    left: 0;
-    font-size: 4rem;
-    word-break: break-word;
-    text-shadow: 0px 0px 10px rgb(255 255 255 / 100%);
-    transition-duration: 2s;
-    transition-property: top;
-  }
-} */
