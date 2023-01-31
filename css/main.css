@@ -58,6 +58,14 @@ li {
   line-height: 150%;
 }
 
+li {
+  list-style-type: none;
+}
+
+ul {
+  margin-top: 20px;
+}
+
 /*-------------------------------------CLASSES-------------------------------------*/
 
 .background {
@@ -147,6 +155,7 @@ li {
 
 .extra-space {
   margin-top: 20px;
+  width: 33%;
 }
 
 .fine-print,
