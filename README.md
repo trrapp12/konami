@@ -41,7 +41,10 @@ This is a personal passion project I started when I learned that there was such 
 - [x] DOM manipulation with ```document.addEventListener()``` and ```window.addEventListener```; 
 - [x] ```.push()```
 - [x] ```.splice()```
-- [x] Use of ```querySelector()``` and ```querySelectorAll()```.
+- [x] Using spread operators to split a string into an array of letters.
+- [x] combining ```setInterval()``` and ```clearInterval()``` and a for loop to create a typing effect
+- [x] use of ```new Promise()``` and ```resolve```
+- [x] Use of ```mouseenter``` event listeners to create a pop-up animation
 
 <br>
 <br>
