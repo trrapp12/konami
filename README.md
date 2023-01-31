@@ -1,7 +1,7 @@
 # Konami
 
 
-##### Contributors: Trevor Rapp, Wes Bos
+##### Contributors: Trevor Rapp
 
 ---
 
@@ -50,43 +50,6 @@ This is a personal passion project I started when I learned that there was such 
 <br>
 
 ---
-
-### Instructions on how to launch:
-
-
-1. Create a Folder to hold the program
- > - in the terminal type `mkdir konami` or whatever other name you want to call it. 
- > - navigate into the folder by typing `cd konami`
- > - clone the program into the "Konami" folder you just created by typing: 
- 
- ```
- git clone https://github.com/trrapp12-ironyard/konami.git
- ```
-  
-2. Make sure you are still in the Konami folder.
- 
-3. From the NASA_Photo_Get_Request folder, on the terminal, type `cd konami`. 
-
-4. Type `start index.html` to run the program from the terminal. 
-
-5. Type in different combinations to letters and characters to see if you can guess the secret!
-
-<br>
-<br>
-
----
-
-### Next Steps for my v.2.0:
-
-- [ ] Integrate a cool parallax JS library with the All Seeing Eye in the background
-- [ ] Or integrate a cool effect where it looks like a hacker typing code in the background
-- [ ] Make the CSS generally more stunning
-- [ ] Create a feature where if you hit the delete button it deletes the character on the display
-<br>
-<br>
-
----
-
 
 ### More Information:
 
