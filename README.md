@@ -50,6 +50,8 @@ This is a personal passion project I started when I learned that there was such 
 
 🆕 Use of ```mouseenter``` event listeners to create a pop-up animation
 
+🆕 Use of clear, reusable functional programming
+
 <br>
 <br>
 
