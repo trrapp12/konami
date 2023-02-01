@@ -64,3 +64,7 @@ I then came in and refactored it and added the following:
 ### More Information:
 
 \**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037), or return to my [Github](https://github.com/trrapp12)*
+
+### Artwork
+
+** artwork was created by me using Dall-E open-source AI
