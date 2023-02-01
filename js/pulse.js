@@ -38,3 +38,9 @@ function boxShadowPulse () {
 }
 
 boxShadowPulse ();
+
+document.getElementById('display').addEventListener('click', () => {
+  document.getElementById('display').focus()
+  navigator.virtualKeyboard.show()
+})
+// when you try to get this working again see if you can get contenteditable="true" to only show up in mobile on the display element that gets focus

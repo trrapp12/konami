@@ -90,19 +90,19 @@ ul {
   border-style: solid;
   border-width: 5px;
   height: 25px;
-  right: 0%;
+  right: 0;
   /* margin: auto; */
   width: 25px;
   position: absolute;
-  top: -2vh;
+  top: -12.5px;
   overflow: hidden;
 }
 
 .cli {
   align-content: center;
-  color: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.2);
   display: flex;
-  font-size: 89px;
+  font-size: max(1rem, 2vw);
   height: fit-content;
   justify-content: center;
   text-align: center;
@@ -112,8 +112,8 @@ ul {
 
 .display {
   box-shadow: border-box;
-  color: rgba(255, 255, 255, .4);
-  font-size: 50px;
+  color: rgba(255, 255, 255, .6);
+  font-size: max(1rem, 2vw);
   height: auto;
   margin: auto;
   overflow-y: hidden;
@@ -121,20 +121,6 @@ ul {
   text-align: left;
   text-overflow: ellipsis;
   transition: all 1s cubic-bezier(0, 1.14, 0.82, 1.02);
-  z-index: 10;
-}
-
-.display1 {
-  display: flex;
-  height: fit-content;
-  font-size: .85em;
-  margin: auto;
-  padding: 40px 40px 40px 40px;
-  text-align: center;
-  text-shadow: none;
-  top: 22vh;
-  transition: all 3s cubic-bezier(0, 1.14, 0.82, 1.02);
-  width: 80%;
   z-index: 10;
 }
 
@@ -151,6 +137,19 @@ ul {
   -webkit-animation-iteration-count: 3000;
   content: "|";
   top: -2px;
+}
+
+.display1 {
+  display: flex;
+  height: fit-content;
+  margin: auto;
+  padding: 40px 40px 40px 40px;
+  text-align: center;
+  text-shadow: none;
+  top: 22vh;
+  transition: all 3s cubic-bezier(0, 1.14, 0.82, 1.02);
+  width: 80%;
+  z-index: 10;
 }
 
 .extra-space {
@@ -198,7 +197,7 @@ li {
   position: absolute;
   top: 7vh;
   left: 0;
-  font-size: 4rem;
+  font-size: max(3rem, 1vw);
   word-break: break-word;
   text-shadow: 0px 0px 10px rgb(255 255 255 / 100%);
   transition-duration: 2s;
@@ -211,11 +210,11 @@ li {
   border-style: solid;
   border-width: 5px;
   height: 25px;
-  left: 0%;
+  left: 0px;
   margin: auto;
   width: 25px;
   position: absolute;
-  top: 25vh;
+  bottom: -12.5px;
   overflow: hidden;
 }
 
@@ -266,3 +265,15 @@ li {
     opacity: 1.0;
   }
 }
+
+@media screen and (max-width: 900px) {
+  .title--h1 {
+    font-size: max(2rem, 1vw);
+  }
+}
+
+/* @media screen and (max-width: 600px) {
+  .top-circle {
+    top: 26vh;
+  }
+} */

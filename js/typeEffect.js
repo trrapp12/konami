@@ -1,10 +1,4 @@
 window.addEventListener('load', () => {
-    // const text1contents = document.getElementById('text1')
-    // const text2contents = document.getElementById('text2')
-    // const text3contents = document.getElementById('text3')
-    // const text4contents = document.getElementById('text4')
-    // const text5contents = document.getElementById('text5')
-    // const text6contents = document.getElementById('text6')
     
     const textOne = 'This is a passion project.';
     const textTwo = 'I created this project because I wanted to see what it would take to make a keystroke logger. I succeeded in the following:';
@@ -17,7 +11,6 @@ window.addEventListener('load', () => {
         let x = document.getElementById(idAsString);
         let arr = [...textToType];
         let i = 0;
-        console.log(x, arr, arr.length)
         let interval = setInterval(function(){
             if (i < arr.length ) {
                     console.log(x.innerHTML)

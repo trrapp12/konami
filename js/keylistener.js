@@ -1,6 +1,6 @@
 const secretCode ="ArrowUpArrowUpArrowDownArrowDownArrowLeftArrowRightArrowLeftArrowRightba";
 let codeChain = [];
-let ignoreValues = ['Shift', 'Control', 'Alt', 'Escape', 'CapsLock', 'Pause', 'Home', 'PageUp', 'PageDown', 'End', 'Home', 'PrintScreen', 'Insert']
+let ignoreValues = ['Shift', 'Control', 'Alt', 'Escape', 'CapsLock', 'Pause', 'Home', 'PageUp', 'PageDown', 'End', 'Home', 'PrintScreen', 'Insert', 'Tab']
 
 document.addEventListener('keydown', (e) => {
 
