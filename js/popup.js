@@ -1,11 +1,11 @@
 window.addEventListener('load', () => {
-
+    console.log('popup.js fired')
     const titleH1 = document.querySelector('.title--h1');
     const titleElement = document.getElementById('title');
     const mediaQuery = window.matchMedia('(max-width: 900px')
 
     titleElement.addEventListener('mouseenter', (e) => {
-        console.log(`mediaQuery is ${mediaQuery.matches}`)
+        
         if (mediaQuery.matches && e.target.id === 'title' && titleH1.classList.contains('hidden')) {
             titleH1.style.top = "-40vh"
             titleH1.classList.remove('hidden');

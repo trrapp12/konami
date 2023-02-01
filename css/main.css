@@ -35,7 +35,9 @@ body:before {
 footer {
   position: absolute;
   bottom: 0;
+  display: flex;
   left: 0;
+  flex-direction: column;
   height: 20vh;
   width: 34%;
   overflow: hidden;
@@ -154,7 +156,7 @@ ul {
 
 .extra-space {
   margin-top: 20px;
-  width: 33%;
+  max-width: -webkit-fill-available;
 }
 
 .fine-print,
@@ -162,6 +164,12 @@ li {
   font-size: .75rem;
   line-height: 120%;
   padding: 0;
+  max-width: 33vw;
+}
+
+.footer--container {
+  flex-grow: 1;
+  width: 33vw;
 }
 
 .hidden {
@@ -269,6 +277,10 @@ li {
 @media screen and (max-width: 900px) {
   .title--h1 {
     font-size: max(2rem, 1vw);
+  }
+
+  .fine-print {
+    font-size: 1rem;
   }
 }
 
