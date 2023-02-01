@@ -67,4 +67,4 @@ I then came in and refactored it and added the following:
 
 ### Artwork
 
-**artwork was created by me using Dall-E open-source AI**
+*artwork was created by me using Dall-E open-source AI*
