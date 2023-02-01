@@ -35,11 +35,11 @@ https://user-images.githubusercontent.com/11747875/215296892-b8196e63-7df5-47ba-
 ### Description:
 
 
-This is a personal passion project I started when I learned that there was such a thing as a key stroke listener (like the CIA kind).  I thought it would be cool to make one.  But I wasn't going to use a form with HTML input elements, because all the heavy lifting would already have been done.  I needed to make one where I did most of the heavy lifting.  So I studied and discovered what eventListeners were in JavaScript.  I also had to figure out what type of events were returned and how to filter out keys I didn't want displayed (like when you press the space bar it would type 'space').  
+This is a personal passion project I started when I learned that there was such a thing as a keystroke listener (like the CIA kind).  I thought it would be cool to make one.  But I wasn't going to use a form with HTML input elements, because all the heavy lifting would already have been done.  I needed to make one where I did most of the heavy lifting.  So I studied and discovered what EventListeners are in JavaScript.  I also had to figure out what type of events were returned and how to filter out keys I didn't want to be displayed (like when you press the space bar it would type 'space').  
 
 The original version accomplished the following:
 
-- [x] Use of Javascript keydown and keyup listeners.
+- [x] Use of Javascript ```keydown``` and ```keyup``` listeners.
 - [x] DOM manipulation with ```document.addEventListener()``` and ```window.addEventListener```; 
 - [x] ```.push()```
 - [x] ```.splice()```
