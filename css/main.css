@@ -6,6 +6,7 @@
   margin: 0;
   width: 100vw;
   font-family: courier;
+  box-sizing: border-box;
 }
 
 /*-------------------------------------ELEMENTS-------------------------------------*/
@@ -190,6 +191,7 @@ li {
   border-bottom: 5px solid rgba(255, 255, 255, .7);
   transition-duration: 2s;
   transition-property: top;
+  padding: 3rem;
 }
 
 .title::after {
@@ -203,13 +205,14 @@ li {
   width: fit-content;
   height: 100%;
   position: absolute;
-  top: 7vh;
+  top: 5vh;
   left: 0;
-  font-size: max(3rem, 1vw);
+  font-size: max(3.25rem, 1vw);
   word-break: break-word;
   text-shadow: 0px 0px 10px rgb(255 255 255 / 100%);
   transition-duration: 2s;
   transition-property: top;
+  width: auto;
 }
 
 .top-circle {
