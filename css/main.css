@@ -173,12 +173,6 @@ li {
   width: 33vw;
 }
 
-.hidden {
-  top: 27vh;
-  position: absolute;
-  transition-duration: 2s;
-  transition-property: top;
-}
 
 .title {
   position: absolute;
@@ -214,6 +208,15 @@ li {
   transition-property: top;
   width: auto;
 }
+
+/* keep hidden below the title so that it can overwrite the top value without having to increase specificity */
+.hidden {
+  top: 30vh;
+  position: absolute;
+  transition-duration: 2s;
+  transition-property: top;
+}
+
 
 .top-circle {
   border: rgba(255, 255, 255, .7);
@@ -284,6 +287,12 @@ li {
 
   .fine-print {
     font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .title--h1 {
+    font-size: max(1.15rem, 1vw);
   }
 }
 

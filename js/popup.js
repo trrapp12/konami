@@ -1,25 +1,20 @@
 window.addEventListener('load', () => {
-    console.log('popup.js fired')
+
     const titleH1 = document.querySelector('.title--h1');
     const titleElement = document.getElementById('title');
-    const mediaQuery = window.matchMedia('(max-width: 900px')
+    
+        setTimeout(() => {
+            toggleClass(titleH1)
+        }, 4000)
 
-    titleElement.addEventListener('mouseenter', (e) => {
-        
-        if (mediaQuery.matches && e.target.id === 'title' && titleH1.classList.contains('hidden')) {
-            titleH1.style.top = "-40vh"
-            titleH1.classList.remove('hidden');
-            setTimeout(()=> {
-                titleH1.classList.add('hidden');
-            },3500)
-        } else if (!mediaQuery.matches && e.target.id === 'title' && titleH1.classList.contains('hidden')){
-            titleH1.classList.remove('hidden');
-            setTimeout(()=> {
-                titleH1.classList.add('hidden');
-            },3500)
-        } else {
-            titleH1.classList.add('hidden');
+        function toggleClass(element) {
+            if (element.classList.contains('hidden')) {
+                element.classList.remove('hidden')
+            } else {
+                element.classList.add('hidden')
+            }
         }
-    });
+
+    titleElement.addEventListener('mouseenter', toggleClass)
 })
 
