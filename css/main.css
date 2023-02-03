@@ -36,17 +36,14 @@ body:before {
 footer {
   position: absolute;
   bottom: 0;
-  display: flex;
   left: 0;
-  flex-direction: column;
-  height: 20vh;
+  height: 27vh;
   width: 34%;
   overflow: hidden;
   z-index: 100;
   border-top: 5px solid rgba(255, 255, 255, .7);
   transition-duration: 2s;
   transition-property: top;
-  padding: 2rem;
 }
 
 p,
@@ -67,6 +64,10 @@ li {
 
 ul {
   margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  /* flex-basis: min-content; */
+  max-width: fit-content;
 }
 
 /*-------------------------------------CLASSES-------------------------------------*/
@@ -157,7 +158,9 @@ ul {
 
 .extra-space {
   margin-top: 20px;
-  max-width: -webkit-fill-available;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .fine-print,
@@ -169,8 +172,16 @@ li {
 }
 
 .footer--container {
-  flex-grow: 1;
-  width: 33vw;
+  max-width: 35vw;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  height: auto;
+  margin-left: -5px;
+}
+
+.text-desktop {
+  width: auto;
 }
 
 
@@ -280,6 +291,27 @@ li {
   }
 }
 
+@media screen and (max-width: 1200px) {
+  .text-desktop {
+    display: none;
+  }
+
+  .text-mobile-container {
+    display: flex;
+    flex-direction: row;
+    width: 66%;
+    word-break: break-word;
+    padding: 1em 0 0 .5em;
+  }
+
+
+  .text-mobile {
+    font-size: max(2rem, 1vw);
+    word-break: initial;
+    word-wrap: unset;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .title--h1 {
     font-size: max(2rem, 1vw);
@@ -288,11 +320,28 @@ li {
   .fine-print {
     font-size: 1rem;
   }
+
 }
 
 @media screen and (max-width: 600px) {
   .title--h1 {
     font-size: max(1.15rem, 1vw);
+  }
+
+  p,
+  li {
+    max-width: fit-content;
+    color: rgba(255, 255, 255, .8);
+    height: min-content;
+    word-break: break-word;
+    text-shadow: 0px 0px 10px #D99A25;
+    transition-duration: 2s;
+    transition-property: top;
+    line-height: 80%;
+  }
+
+  footer {
+    padding: 5px;
   }
 }
 

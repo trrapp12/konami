@@ -6,6 +6,7 @@ window.addEventListener('load', () => {
     const textFour = '* preforming a logical check on the input to scrape for a certain phrase';
     const textFive = '* creating a response when that phrase was logged';
     const textSix = '* having a ton of fun experimenting with designs and animations';
+    const textMobile = 'A passion project';
 
     function writeText(idAsString, textToType, time, promiseFunction) {
         let x = document.getElementById(idAsString);
@@ -24,6 +25,7 @@ window.addEventListener('load', () => {
 
     
     writeText('text1', textOne, 90, writeText)
+    writeText('text-mobile', textMobile, 90, writeText)
 
     setTimeout(function (){
         writeText('text2', textTwo, 90, writeText)
