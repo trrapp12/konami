@@ -1,8 +1,5 @@
 # Konami
 
-
-##### Contributors: Trevor Rapp
-
 ---
 
 <br>
@@ -18,9 +15,6 @@ https://user-images.githubusercontent.com/11747875/219751070-c09d4bec-e275-4f13-
 
 <br>
 
-
-
-
 ---
 
 <img align="left" alt="HTML5" width="26px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" />
@@ -34,6 +28,10 @@ https://user-images.githubusercontent.com/11747875/219751070-c09d4bec-e275-4f13-
 
 ### Description:
 
+> “Oh, that? I never thought it was eavesdropping, Aslan. Wasn't it magic?"
+>
+> "Spying on people by magic is the same as spying on them in any other way.”
+> ― C. S. Lewis
 
 This is a personal passion project I started when I learned that there was such a thing as a keystroke listener (like the CIA kind).  I thought it would be cool to make one.  
 
@@ -66,10 +64,14 @@ I then came in and refactored it and added the following:
 
 ---
 
-### More Information:
+### CREDITS: 
 
-\**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037), or return to my [Github](https://github.com/trrapp12)*
-
-### Artwork
+Contributors: Trevor Rapp
 
 *artwork was created by me using Dall-E open-source AI*
+
+---
+
+### YOU CAN FIND ME AT:
+
+\**For more information see my [LinkedIn](https://www.linkedin.com/in/trevor-rapp-042a1037), or return to my [Github](https://github.com/trrapp12)*
