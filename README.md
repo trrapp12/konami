@@ -31,14 +31,17 @@ https://user-images.githubusercontent.com/11747875/219751070-c09d4bec-e275-4f13-
 > “Oh, that? I never thought it was eavesdropping, Aslan. Wasn't it magic?"
 >
 > "Spying on people by magic is the same as spying on them in any other way.”
+> 
 > ― C. S. Lewis
 
-This is a personal passion project I started when I learned that there was such a thing as a keystroke listener (like the CIA kind).  I thought it would be cool to make one.  
+This is a personal passion project I started when I learned that there was such a thing as a keystroke listener (like the CIA kind).  I thought it would be cool to make one. 
 
-> So why not just use an ```<form>``` and ```<input>``` tag?
-> **BECAUSE ALL THE HEAVY LIFTING WOULD HAVE ALREADY BEEN DONE.** 
-> I needed to make one where I did most of the heavy lifting.  So I studied and discovered what EventListeners are in JavaScript.  
-> I also had to figure out what type of events were returned and how to filter out keys I didn't want > to be displayed (like when you press the spacebar > it would type 'space').  
+To make one it had to:
+
+* listen to keystrokes
+* do some type of logical process to check for a pattern in the keystrokes
+* create a fun result when that pattern is found
+* do it without an html form or input element which already has most of this baked into it (what good is experimenting with a solution that is already solved for me?)
 
 The original version accomplished the following:
 
@@ -58,9 +61,6 @@ I then came in and refactored it and added the following:
 🆕 Use of ```mouseenter``` event listeners to create a pop-up animation
 
 🆕 Use of clear, reusable functional programming
-
-<br>
-<br>
 
 ---
 
