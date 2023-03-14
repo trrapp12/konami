@@ -1,4 +1,4 @@
-# Konami
+# KONAMI
 
 ---
 
@@ -26,7 +26,7 @@ https://user-images.githubusercontent.com/11747875/219751070-c09d4bec-e275-4f13-
 
 ---
 
-### Description:
+### DESCRIPTION:
 
 > “Oh, that? I never thought it was eavesdropping, Aslan. Wasn't it magic?"
 >
