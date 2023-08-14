@@ -309,10 +309,18 @@ li {
     font-size: max(2rem, 1vw);
     word-break: initial;
     word-wrap: unset;
+    transition: all 1s ease;
   }
 }
 
 @media screen and (max-width: 900px) {
+  .text-mobile {
+    font-size: max(1rem, 1vw);
+    word-break: initial;
+    word-wrap: unset;
+    transition: all 1s ease;
+  }
+
   .title--h1 {
     font-size: max(2rem, 1vw);
   }
