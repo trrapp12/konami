@@ -4,14 +4,11 @@
 
 <br>
 
-https://user-images.githubusercontent.com/11747875/219751070-c09d4bec-e275-4f13-9129-4d3e5c0f9462.mp4
-
-<br>
-
-<br>
-
 [![Button60](https://user-images.githubusercontent.com/11747875/141862863-396ab1ee-36db-45fc-bdf9-857cc75ef75b.png)](https://trrapp12.github.io/konami/)
 
+<br>
+
+https://user-images.githubusercontent.com/11747875/219751070-c09d4bec-e275-4f13-9129-4d3e5c0f9462.mp4
 
 <br>
 
