@@ -87,9 +87,9 @@ I later came back and revamped the project and included:
 <br/>
 ---
 
-### CREDITS: 
+### ATTRIBUTIONS: 
 
-Contributors: Trevor Rapp
+[MDN: keydown event](https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event)
 
 *artwork was created by me using Dall-E open-source AI*
 
