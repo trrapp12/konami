@@ -81,6 +81,8 @@ I later came back and revamped the project and included:
 ### CHALLENGES I OVERCAME
 
 - [X] figuring out how keystrokes were referred to so I could ignore unimportant ones
+      
+- [X] Creating a typing effect, but with multiple lines.  I had to break the text up into sections and then time them correctly with setIntervals.  Looking at it now I think I can find a better way, but I also have other, more pressing, projects.
 
 <br/>
 ---
