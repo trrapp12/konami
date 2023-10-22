@@ -31,16 +31,16 @@ https://user-images.githubusercontent.com/11747875/219751070-c09d4bec-e275-4f13-
 > 
 > ― C. S. Lewis
 
-This is a personal passion project I started when I learned that there was such a thing as a keystroke listener (like the CIA kind).  I thought it would be cool to make one. 
+*This is a personal passion project I started when I learned that there was such a thing as a keystroke listener (like the CIA kind).  I thought it would be cool to make one.*
 
-To make one it had to:
+*To make one it had to:*
 
-* listen to keystrokes
-* do some type of logical process to check for a pattern in the keystrokes
-* create a fun result when that pattern is found
-* do it without an html form or input element which already has most of this baked into it (what good is experimenting with a solution that is already solved for me?)
+* *listen to keystrokes*
+* *do some type of logical process to check for a pattern in the keystrokes*
+* *create a fun result when that pattern is found*
+* *do it without an html form or input element which already has most of this baked into it (what good is experimenting with a solution that is already solved for me?)*
 
-The original version accomplished the following:
+*The original version accomplished the following:*
 
 - [x] Use of Javascript ```keydown``` and ```keyup``` listeners.
 - [x] DOM manipulation with ```document.addEventListener()``` and ```window.addEventListener```; 
