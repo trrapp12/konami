@@ -56,6 +56,8 @@ To use the app simply click on the ```View Project``` button or visit <a href="h
 
 ### THIS PROJECT DEMONSTRATES:
 
+<br/>
+
 v1.0 demonstrated the following:
 
 - [X] event listeners.
@@ -65,6 +67,8 @@ v1.0 demonstrated the following:
 - [X]  ```.push()```
 
 - [X] ```.splice()```
+
+<br/>
 
 I later came back and revamped the project and included: 
 
