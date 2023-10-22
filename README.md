@@ -80,7 +80,7 @@ I later came back and revamped the project and included:
 
 ### CHALLENGES I OVERCAME
 
-
+- [X] figuring out how keystrokes were referred to so I could ignore unimportant ones
 
 <br/>
 ---
