@@ -33,6 +33,26 @@ https://user-images.githubusercontent.com/11747875/219751070-c09d4bec-e275-4f13-
 
 *This is a personal passion project I started when I learned that there was such a thing as a keystroke listener (like the CIA kind).  I thought it would be cool to make one.*
 
+---
+
+### QUICKSTART GUIDE
+
+To use the app simply click on the ```View Project``` button or visit <a href="https://trrapp12.github.io/groovy-blocks/">https://trrapp12.github.io/groovy-blocks/</a>. 
+
+<br/>
+
+---
+
+### THIS PROJECT DEMONSTRATES:
+
+- [X] Use of Canvas API to draw squares.
+      
+- [X] use of basic JavaScript principles like loops and conditionals to create a randomized, regenerating pattern.
+
+<br/>
+
+---
+
 *To make one it had to:*
 
 * *listen to keystrokes*
