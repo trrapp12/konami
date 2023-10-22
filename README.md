@@ -78,7 +78,11 @@ I later came back and revamped the project and included:
 
 ---
 
+### CHALLENGES I OVERCAME
 
+
+
+<br/>
 ---
 
 ### CREDITS: 
